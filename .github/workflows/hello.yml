@@ -1,14 +1,8 @@
-- name: Begrüßung
-  run: echo "Hallo, ${{ inputs.name }}!"
+name: Hallo Welt
 
 on:
   push:
   workflow_dispatch:
-    inputs:
-      name:
-        description: "Wen soll ich begrüßen?"
-        required: true
-        default: "Welt"
 
 jobs:
   sag-hallo:

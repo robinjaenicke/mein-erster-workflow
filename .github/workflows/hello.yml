@@ -1,5 +1,4 @@
-name: Begrüßung
-run: echo "Hallo, ${{ inputs.name }}!"
+name: Hallo Welt
 
 on:
   push:
@@ -15,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Begrüßung
-        run: echo "Hallo aus GitHub Actions!"
+        run: echo "Hallo, ${{ inputs.name }}!"
 
       - name: Datum und Uhrzeit
         run: date

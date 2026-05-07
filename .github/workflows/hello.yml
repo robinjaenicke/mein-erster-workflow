@@ -13,8 +13,8 @@ jobs:
   sag-hallo:
     runs-on: ubuntu-latest
     steps:
-      - name: Begrüßung
-        run: echo "Hallo, ${{ inputs.name }}!"
+      - name: Absichtlich falsch
+        run: dieser-befehl-existiert-nicht
 
       - name: Datum und Uhrzeit
         run: date

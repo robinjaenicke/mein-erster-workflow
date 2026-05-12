@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
     inputs:
-      name:
+      starten:
         description: "Du hast den Knopf gedrückt"
         required: true
         #default: "Welt"    

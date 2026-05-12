@@ -1,0 +1,13 @@
+name: Übung1
+
+on:
+  push:
+  workflow_dispatch:
+
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Immer
+        run: echo "Immer"    

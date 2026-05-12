@@ -3,6 +3,11 @@ name: Übung1
 on:
   push:
   workflow_dispatch:
+    inputs:
+      name: manuelle Auslösung
+        description: "Du hast den Knopf gedrückt"
+        required: true
+        #default: "Welt"    
 
 
 jobs:

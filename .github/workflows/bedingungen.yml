@@ -12,4 +12,7 @@ jobs:
       - name: Eventname
         run: echo "${{ github.event_name }}"    
       - name: Branchname
-        run: echo "${{ github.ref_name }}"            
+        run: echo "${{ github.ref_name }}" 
+      - name: manueller Auslöser
+        if: workflow_dispatch
+        run: echo "Du hast den Knopf gedrückt."           

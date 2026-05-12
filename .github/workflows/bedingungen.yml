@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Immer
-        run: echo "Immer"    
+        run: echo "${{ github.event_name }}"    

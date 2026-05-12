@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Immer
         run: echo "${{ github.event_name }}"    
+      - name: Nur bei Push
+        run: echo "${{ github.ref_name }}"            

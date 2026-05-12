@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
     inputs:
-      name: manuelle Auslösung
+      name:
         description: "Du hast den Knopf gedrückt"
         required: true
         #default: "Welt"    

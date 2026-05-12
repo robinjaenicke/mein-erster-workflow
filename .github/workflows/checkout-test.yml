@@ -12,6 +12,6 @@ jobs:
         continue-on-error: true
         run: cat hallo.txt     
       - name: Repository auschecken
-        uses: actions/checkout           
+        uses: actions/checkout@v4           
       - name: Muss laufen        
         run: cat hello.txt

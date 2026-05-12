@@ -12,6 +12,7 @@ jobs:
       - name: Eventname
         run: echo "${{ github.event_name }}"    
       - name: Branchname
+        if: github.event_name == 'push'      
         run: echo "${{ github.ref_name }}" 
       - name: manueller Auslöser
         if: github.event_name == 'workflow_dispatch'

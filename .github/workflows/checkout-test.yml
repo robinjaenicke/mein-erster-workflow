@@ -8,9 +8,9 @@ jobs:
   Checkout:
     runs-on: ubuntu-latest  
     steps:
-      - run: cat hallo.txt
-    continue-on-error: true
-    
-    steps:
-      - uses: actions/checkout
-      - run: cat hello.txt
+      - name: Muss fehlschlagen    
+        run: cat hallo.txt
+        continue-on-error: true
+      - name: Muss laufen        
+        uses: actions/checkout
+        run: cat hello.txt

@@ -9,8 +9,9 @@ jobs:
     runs-on: ubuntu-latest  
     steps:
       - name: Muss fehlschlagen    
-        run: cat hallo.txt
         continue-on-error: true
+        run: cat hallo.txt     
+      - name: Repository auschecken
+        uses: actions/checkout           
       - name: Muss laufen        
-        uses: actions/checkout
         run: cat hello.txt

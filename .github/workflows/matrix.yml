@@ -1,0 +1,23 @@
+name: Übung 6.4
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  phython-versionen:
+    runs-on: ubuntu-latest  
+    strategy:
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - name: Phyton installieren  
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}        
+
+      - name: Version prüfen
+        run: phython --verion
+
+      - name: Eigenes Echo
+        run: echo "Läuft auf Python ${{ matrix.python }}" 
